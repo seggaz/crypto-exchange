@@ -2,6 +2,8 @@
 
 This project is a simple React application that allows users to calculate the amount of USDT (Tether) they will receive when buying or selling a certain amount of Ethereum (ETH).
 
+![Screenshot](https://github.com/crypto-exchange/blob/master/image.png
+
 ## Available Scripts
 
 In the project directory, you can run:
