@@ -1,0 +1,73 @@
+.exchange-form {
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	background-color: aliceblue;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+input,
+.select-wrapper select {
+	width: 100%;
+	padding: 10px 0 10px 7px;
+	margin-top: 5px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+.select-wrapper {
+	position: relative;
+}
+
+.select-wrapper select {
+	padding-right: 50px;
+	appearance: none;
+	background-color: #f9f9f9;
+}
+
+.select-wrapper:after {
+	content: '\25BC';
+	font-size: 16px;
+	color: #6549e1;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+
+.select-wrapper select:active + .arrow {
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.select-wrapper select:active + .arrow:after {
+	content: none;
+}
+
+.select-wrapper .arrow {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	transition: transform 0.3s ease;
+}
+
+.select-wrapper .arrow:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #555 transparent transparent transparent;
+}
